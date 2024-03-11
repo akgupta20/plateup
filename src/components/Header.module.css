@@ -70,6 +70,7 @@ a {
 .dropdownContent {
   display: none;
   position: absolute;
+  font-size: 14px;
 }
 
 .dropdown:hover .dropdownContent {
@@ -89,7 +90,7 @@ a {
 }
 
 .downArrow {
-  padding-left: 10px;
+  margin-left: 10px;
   transition: transform 0.3s;
 }
 
@@ -156,7 +157,7 @@ a {
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1064px) {
   .header {
     padding: 10px 5%;
     justify-content: space-between;
@@ -188,8 +189,9 @@ a {
   .linkContainer {
     padding-bottom: 16px;
     border-bottom: 1px solid #eaeaea;
-    width: 100%;
+    width: 80%;
     display: flex;
+    justify-content: space-between;
   }
 
   .brand {
@@ -213,6 +215,10 @@ a {
     margin-right: 4px;
   }
 
+  .dropdown {
+    width: 100%;
+  }
+
   .menu {
     display: block;
     transition: opacity 0.3s ease-in-out;
@@ -231,6 +237,7 @@ a {
     display: block;
     position: static;
     flex-direction: column;
+    width: 70%;
   }
 
   .downArrow {
@@ -242,6 +249,7 @@ a {
   }
 
   .category {
+    /* background-color: red; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -258,6 +266,7 @@ a {
   .headerLink:after {
     display: none;
   }
+
 
   .dropdownContent {
     border-radius: 8px;

@@ -30,9 +30,8 @@ const Header = () => {
       >
         {headerLinks.map((link) => (
           <a href={link.path} key={link.id} className={styles.linkContainer}>
-            <div className={styles.headerLink}>
-              {link.label}
-
+            <div>
+              <span className={styles.headerLink}>{link.label}</span>
               <span className={styles.space}></span>
             </div>
             <div className={styles.rightArrow}>
@@ -42,9 +41,11 @@ const Header = () => {
         ))}
 
         {/* Dropdown */}
-        <div className={`${styles.headerLink} ${styles.dropdown}`}>
+        <div className={` ${styles.dropdown}`}>
           <div className={`${styles.dropbtn} `}>
-            <span className={styles.loginText}>Login / Signup</span>
+            <span className={`${styles.headerLink} ${styles.loginText}`}>
+              Login / Signup
+            </span>
 
             <img
               className={styles.downArrow}
