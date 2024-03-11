@@ -117,7 +117,7 @@
   display: flex;
 }
 
-.pillar:hover .keyIcon {
+.keyIcon {
   animation: heartbeat 1.4s linear infinite;
 }
 
@@ -139,9 +139,67 @@
   8%,
   20%,
   32% {
-    transform: scale(1.2);
+    transform: scale(1.16);
   }
   40% {
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .footer {
+    padding: 0 20px;
+  }
+  .container {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .mainTitle {
+    font-size: 20px;
+  }
+
+  .keyword {
+    font-size: 14px;
+    letter-spacing: 7.5%;
+  }
+
+  .categories {
+    display: none;
+  }
+
+  .directionContainer {
+    flex-direction: column;
+  }
+  .arrow {
+    padding: 2px 3px;
+  }
+
+  .pillarImage {
+    width: 300px;
+  }
+
+  .pillarTitle {
+    font-size: 16px;
+  }
+  .pillarDescription {
+    font-size: 14px;
+  }
+
+  .pillarText {
+    padding: 20px 14px;
+  }
+  .keyHeading {
+    font-size: 12px;
+  }
+  .keySubHeading {
+    font-size: 10px;
+  }
+  .tagline {
+    margin-top: -20%;
+    margin-left: 12px;
   }
 }

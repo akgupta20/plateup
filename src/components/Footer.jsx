@@ -10,11 +10,11 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div>
-        <div>
+        <div className={styles.container}>
           <div className={styles.keyword}>HOW IT WORKS</div>
           <div className={styles.directionContainer}>
             <div className={styles.title}>
-              <span>Lifestyle as medicine:</span> The six pillars
+              <span className={styles.mainTitle}>Lifestyle as medicine:</span> The six pillars
             </div>
             <div className={styles.arrows}>
               <button
