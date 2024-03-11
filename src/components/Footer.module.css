@@ -1,0 +1,147 @@
+.footer {
+  margin: 30vh 0 10vh 0;
+  color: #707070;
+  padding: 0 100px;
+  /* box-shadow: 0px 0px 200px 100px #cfe1f0; */
+}
+
+.keyword {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.title {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+}
+
+.title span {
+  font-weight: 600;
+  font-style: italic;
+  background: linear-gradient(289.5deg, #f1ca72 27.25%, #d96e6c 92.08%);
+  background-clip: text;
+  color: transparent;
+}
+
+.categories {
+  display: flex;
+  gap: 16px;
+  margin-top: 35px;
+}
+
+.category {
+  border: 1px solid #d2d2d2;
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-size: 16px;
+  transition: all 0.6s ease-in-out;
+}
+
+.activeCategory {
+  background-color: black;
+  color: white;
+}
+
+.pillars {
+  display: flex;
+  margin-top: 50px;
+  gap: 40px;
+  transition: all 0.3s;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.pillar {
+  border-radius: 16px;
+  box-shadow: 0px 3.388819932937622px 26.263355255126953px 0px #0000001f;
+}
+
+.pillarText {
+  padding: 40px 25px;
+}
+
+.arrows {
+  display: flex;
+  gap: 16px;
+}
+.arrow {
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  padding: 6px 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.arrow:hover {
+  transform: scale(1.08);
+  border-color: #8b8a8a;
+}
+
+.directionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pillar {
+  box-shadow: 0px 3.388819932937622px 26.263355255126953px 0px #0000001f;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pillarTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.pillarDescription {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.imgContainer {
+  position: relative;
+}
+
+.tagline {
+  margin-left: 25px;
+  position: absolute;
+  background-color: #ffffffde;
+  border-radius: 67px;
+  padding: 8px 18px;
+  margin-top: -15%;
+  display: flex;
+}
+
+.pillar:hover .keyIcon {
+  animation: heartbeat 1.4s linear infinite;
+}
+
+.keyHeading {
+  margin: 0 4px 0 6px;
+  color: #000000;
+  font-weight: 500;
+}
+
+@keyframes heartbeat {
+  0%,
+  2% {
+    transform: scale(1);
+  }
+  4%,
+  24% {
+    transform: scale(1.1);
+  }
+  8%,
+  20%,
+  32% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

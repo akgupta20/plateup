@@ -1,0 +1,272 @@
+/* Base Styles */
+.header {
+  padding: 12px 100px;
+  display: flex;
+  border-bottom: #eaeaea 1px solid;
+  font-weight: 500;
+  justify-content: space-between;
+  background-color: #f9fafb;
+}
+
+a {
+  color: #4384e6;
+}
+
+/* Brand Styles */
+.brand {
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+}
+
+.brandLink {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.075em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.brandLogo {
+  width: 32px;
+  height: 32px;
+  box-shadow: 0px 3.45px 25.88px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 8px;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Header Links Styles */
+.headerLinks {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff26;
+  animation: appear 0.5s forwards;
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.headerLink {
+  font-size: 14px;
+  letter-spacing: 0em;
+  color: #707070;
+  text-decoration: none;
+  padding: 2px 0;
+  position: relative;
+}
+
+/* Dropdown Styles */
+.dropdownContent {
+  display: none;
+  position: absolute;
+}
+
+.dropdown:hover .dropdownContent {
+  background-color: coral;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  box-shadow: 0px 3.388819932937622px 26.263355255126953px 0px #0000001f;
+  margin: 0px 0px 0px -80px;
+  color: #000000;
+  text-align: left;
+  width: 170px;
+  height: 60px;
+  align-items: center;
+}
+
+.downArrow {
+  padding-left: 10px;
+  transition: transform 0.3s;
+}
+
+.rightArrow {
+  display: none;
+}
+
+.dropdown:hover .downArrow {
+  transform: rotate(180deg);
+}
+
+/* Category Styles */
+.category {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.categoryLinks {
+  display: flex;
+  width: 58%;
+  justify-content: space-between;
+}
+
+/* Additional Styles */
+.space {
+  margin: 0 0rem 0 1.2rem;
+  padding-left: 1px;
+  background-color: #d0d0d0;
+}
+
+.headerLink:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  width: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #4f4f4f;
+  z-index: 1;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.headerLink:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.linkContainer {
+  text-decoration: none;
+}
+
+/* Menu Styles */
+.menu {
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px 5%;
+    justify-content: space-between;
+  }
+
+  .headerLinks {
+    padding: 20px 0px;
+    top: 7vh;
+    width: 100%;
+    position: absolute;
+    align-items: start;
+    z-index: 1;
+    background-color: white;
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .headerLink {
+    width: 80%;
+    justify-content: space-between;
+    color: #000000;
+    font-weight: 400;
+  }
+
+  .linkContainer {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eaeaea;
+    width: 100%;
+    display: flex;
+  }
+
+  .brand {
+    flex-grow: 1;
+  }
+
+  .brandLink {
+    font-size: 18px;
+  }
+
+  .rightArrow {
+    display: inline;
+  }
+
+  .brandLogo {
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 2.4381003379821777px 18.285755157470703px 0px #00000017;
+    border-radius: 8px;
+    padding: 4px;
+    margin-right: 4px;
+  }
+
+  .menu {
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .menu img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu.close img {
+    transform: rotate(180deg);
+  }
+
+  .dropdownContent {
+    display: block;
+    position: static;
+    flex-direction: column;
+  }
+
+  .downArrow {
+    display: none;
+  }
+
+  .space {
+    display: none;
+  }
+
+  .category {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    border-radius: 2px;
+    border: 1px solid #ebebeb;
+  }
+
+  .categoryLinks {
+    width: 58%;
+    justify-content: space-evenly;
+  }
+
+  .headerLink:after {
+    display: none;
+  }
+
+  .dropdownContent {
+    border-radius: 8px;
+    padding: 0px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .dropbtn {
+    display: none;
+  }
+}
