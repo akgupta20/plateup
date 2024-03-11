@@ -18,6 +18,7 @@ const HeroFooter = () => {
 
   return (
     <div className={styles.heroFooter}>
+
       <form onSubmit={handleSubmit}>
         {formFields.map((field) => (
           <div key={field.id} className={styles.inputField}>
@@ -29,7 +30,7 @@ const HeroFooter = () => {
             />
           </div>
         ))}
-        <div>
+        <div className={styles.btnContainer}>
           <button type="submit" className={styles.btn}>
             <img
               className={styles.search}

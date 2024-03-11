@@ -31,7 +31,7 @@ const Pillar = ({ activePillar, setActivePillar }) => {
             }}
             className={styles.pillar}
           >
-            <div className={styles.imgContainer}>
+            <div   onClick={() => setActivePillar(index)} className={styles.imgContainer}>
               <img
                 src={pillar.image}
                 alt={pillar.title}

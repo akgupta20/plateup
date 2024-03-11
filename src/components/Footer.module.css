@@ -154,6 +154,10 @@
     text-align: center;
   }
 
+  .pillars {
+    gap: 40px;
+  }
+
   .title {
     font-size: 14px;
     font-weight: 600;
@@ -174,8 +178,9 @@
   .directionContainer {
     flex-direction: column;
   }
-  .arrow {
-    padding: 2px 3px;
+
+  .arrows {
+    display: none;
   }
 
   .pillarImage {
