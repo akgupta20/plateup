@@ -30,8 +30,8 @@ a {
 }
 
 .brandLogo {
-  width: 32px;
-  height: 32px;
+  width: 60px;
+  height: 60px;
   box-shadow: 0px 3.45px 25.88px 0px rgba(0, 0, 0, 0.09);
   border-radius: 8px;
   padding: 10px;
@@ -71,11 +71,6 @@ a {
   display: none;
   position: absolute;
   font-size: 14px;
-}
-
-.dropdown:hover .dropdownContent {
-  background-color: coral;
-  display: flex;
   flex-direction: column;
   z-index: 1;
   background-color: #ffffff;
@@ -84,9 +79,13 @@ a {
   margin: 0px 0px 0px -80px;
   color: #000000;
   text-align: left;
-  width: 170px;
-  height: 60px;
+  width: 200px;
+  height: 120px;
   align-items: center;
+}
+
+.dropdown:hover .dropdownContent {
+  display: flex;
 }
 
 .downArrow {
@@ -159,13 +158,15 @@ a {
 /* Responsive Styles */
 @media screen and (max-width: 1064px) {
   .header {
-    padding: 10px 5%;
+    padding: 10px 0;
+    align-items: center;
     justify-content: space-between;
   }
 
   .headerLinks {
-    padding: 20px 0px;
-    top: 7vh;
+    box-sizing: border-box;
+    padding: 10px 0px;
+    top: 57px;
     width: 100%;
     position: absolute;
     align-items: start;
@@ -180,21 +181,24 @@ a {
   }
 
   .headerLink {
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     color: #000000;
     font-weight: 400;
+    margin-left: 30px;
   }
 
   .linkContainer {
     padding-bottom: 16px;
+    box-sizing: border-box;
     border-bottom: 1px solid #eaeaea;
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
 
   .brand {
+    padding-left: 5%;
     flex-grow: 1;
   }
 
@@ -204,11 +208,12 @@ a {
 
   .rightArrow {
     display: inline;
+    margin-right: 30px;
   }
 
   .brandLogo {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     box-shadow: 0px 2.4381003379821777px 18.285755157470703px 0px #00000017;
     border-radius: 8px;
     padding: 4px;
@@ -217,9 +222,12 @@ a {
 
   .dropdown {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .menu {
+    padding-right: 5%;
     display: block;
     transition: opacity 0.3s ease-in-out;
     cursor: pointer;
@@ -234,10 +242,18 @@ a {
   }
 
   .dropdownContent {
-    display: block;
+    display: flex;
     position: static;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
+    border-radius: 8px;
+    padding: 20px;
+    height: 120px;
+    z-index: 1;
+    padding: 0px;
+    box-shadow: 0px 3.388819932937622px 26.263355255126953px 0px #0000001f;
+    margin: 0px;
+    margin-bottom: 20px;
   }
 
   .downArrow {
@@ -249,7 +265,7 @@ a {
   }
 
   .category {
-    /* background-color: red; */
+    box-sizing: border-box;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -265,14 +281,6 @@ a {
 
   .headerLink:after {
     display: none;
-  }
-
-
-  .dropdownContent {
-    border-radius: 8px;
-    padding: 0px;
-    font-weight: 500;
-    margin-bottom: 20px;
   }
 
   .dropbtn {

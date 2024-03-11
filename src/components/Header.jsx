@@ -71,7 +71,7 @@ const Header = () => {
         className={`${styles.menu} ${toggle ? styles.close : ""}`}
         onClick={() => setToggle(!toggle)}
       >
-        <img src={toggle ? close : menu} alt="" />
+        <img src={toggle ? close : menu} alt='menu' />
       </div>
     </div>
   );
