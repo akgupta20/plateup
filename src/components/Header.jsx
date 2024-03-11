@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./Header.module.css";
 import { headerLinks, loginSignupCategories } from "../utils/constraints";
-import menu from "/src/assets/header_section/menu.svg";
-import close from "/src/assets/header_section/close.svg";
-import rightArrow from "/src/assets/header_section/right-arrow.svg";
+import menu from "/assets/header_section/menu.svg";
+import close from "/assets/header_section/close.svg";
+import rightArrow from "/assets/header_section/right-arrow.svg";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -15,7 +15,7 @@ const Header = () => {
         <a href="/" className={styles.brandLink}>
           <img
             className={styles.brandLogo}
-            src="/src/assets/header_section/stethoscope.svg"
+            src="/assets/header_section/stethoscope.svg"
             alt="PlateUp Logo"
           />
           <span>ProVital</span>
@@ -48,7 +48,7 @@ const Header = () => {
 
             <img
               className={styles.downArrow}
-              src="/src/assets/header_section/down-arrow.svg"
+              src="/assets/header_section/down-arrow.svg"
               alt="PlateUp Logo"
             />
           </div>

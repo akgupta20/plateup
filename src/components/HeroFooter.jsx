@@ -33,7 +33,7 @@ const HeroFooter = () => {
           <button type="submit" className={styles.btn}>
             <img
               className={styles.search}
-              src="/src/assets/hero_section/search_white.svg"
+              src="/assets/hero_section/search_white.svg"
               alt="search"
             />
             Find now

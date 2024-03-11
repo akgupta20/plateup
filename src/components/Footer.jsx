@@ -24,7 +24,7 @@ const Footer = () => {
                 }
               >
                 <img
-                  src="/src/assets/footer_section/left-arrow.svg"
+                  src="/assets/footer_section/left-arrow.svg"
                   alt="left-arrow"
                 />
               </button>
@@ -35,7 +35,7 @@ const Footer = () => {
                 }
               >
                 <img
-                  src="/src/assets/footer_section/right-arrow.svg"
+                  src="/assets/footer_section/right-arrow.svg"
                   alt="right-arrow"
                 />
               </button>
