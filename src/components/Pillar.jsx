@@ -1,17 +1,16 @@
-import React, { useState } from "react";
-
 import styles from "./Footer.module.css";
 import { pillars } from "../utils/constraints";
 
 const Pillar = ({ activePillar, setActivePillar }) => {
   return (
     <div>
+      {/* Categories */}
       <div className={styles.categories}>
         {pillars.map((pillar, index) => (
           <button
             key={index}
             className={`${styles.category} ${
-              index == activePillar ? styles.activeCategory : ""
+              index === activePillar ? styles.activeCategory : ""
             }`}
             onClick={() => setActivePillar(index)}
           >
@@ -20,6 +19,7 @@ const Pillar = ({ activePillar, setActivePillar }) => {
         ))}
       </div>
 
+      {/* Pillars */}
       <div className={styles.pillars}>
         {pillars.map((pillar, index) => (
           <div
@@ -31,7 +31,8 @@ const Pillar = ({ activePillar, setActivePillar }) => {
             }}
             className={styles.pillar}
           >
-            <div   onClick={() => setActivePillar(index)} className={styles.imgContainer}>
+            {/* Pillar Image and Tagline */}
+            <div onClick={() => setActivePillar(index)} className={styles.imgContainer}>
               <img
                 src={pillar.image}
                 alt={pillar.title}
@@ -51,6 +52,7 @@ const Pillar = ({ activePillar, setActivePillar }) => {
                 </div>
               </div>
             </div>
+            {/* Pillar Text */}
             <div className={styles.pillarText}>
               <div className={styles.pillarTitle}>{pillar.title}</div>
               <div className={styles.pillarDescription}>

@@ -1,32 +1,31 @@
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import styles from "./HeroFooter.module.css";
 import { formFields } from "../utils/constraints";
 
 const HeroFooter = () => {
   const inputRefs = useRef({}); // Create an object to hold refs for input fields
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     const formData = {};
-    Object.keys(inputRefs.current).forEach((key) => {
+    Object.keys(inputRefs.current).forEach(key => {
       formData[key] = inputRefs.current[key].value;
     });
 
     // Handle form submission with formData
-    console.log(formData);
+    alert('Thank you for submitting the form!', formData);
   };
 
   return (
     <div className={styles.heroFooter}>
-
       <form onSubmit={handleSubmit}>
-        {formFields.map((field) => (
+        {formFields.map(field => (
           <div key={field.id} className={styles.inputField}>
             <img src={field.icon} alt={field.icon} />
             <input
               type={field.type}
               placeholder={field.placeholder}
-              ref={(ref) => (inputRefs.current[field.id] = ref)}
+              ref={ref => (inputRefs.current[field.id] = ref)}
             />
           </div>
         ))}
