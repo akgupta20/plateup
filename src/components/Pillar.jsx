@@ -1,4 +1,4 @@
-import styles from "./Footer.module.css";
+import styles from "./Pillar.module.css";
 import { pillars } from "../utils/constraints";
 
 const Pillar = ({ activePillar, setActivePillar }) => {
@@ -32,7 +32,10 @@ const Pillar = ({ activePillar, setActivePillar }) => {
             className={styles.pillar}
           >
             {/* Pillar Image and Tagline */}
-            <div onClick={() => setActivePillar(index)} className={styles.imgContainer}>
+            <div
+              onClick={() => setActivePillar(index)}
+              className={styles.imgContainer}
+            >
               <img
                 src={pillar.image}
                 alt={pillar.title}

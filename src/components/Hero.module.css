@@ -35,11 +35,6 @@
   }
 }
 
-/* for testing purposed to ensure the animation lined up correctly */
-.test {
-  background: red !important;
-}
-
 li {
   list-style: none;
   padding: 0;
